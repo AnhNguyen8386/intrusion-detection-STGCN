@@ -1,45 +1,26 @@
 # HUMAN ACTION RECOGNITION WITH ST-GCN
 
-## Introduction
-This is project train human action recognition depend on skeleton with ST-GCN. Skeleton extracted with model YOLOv7-Pose
 
-## Dev
-```
-Member:
-- Dao Duy Ngu
-- Le Van Thien
-```
 ## Usage
 ### Install package
 ```
-git clone https://github.com/DuyNguDao/ST-GCN-Pytorch.git
-```
-```
-cd ST-GCN-Pytorch
-```
-```
-conda create --name human_action python=3.8
-```
-```
-pip install -r requirements.txt
-```
-## Dataset
-This is dataset include with 7 class: sitting, sit down, standing, walking, stand up, lying down, fall down
-## video
-[video](https://www.kaggle.com/datasets/ngoduy/dataset-video-for-human-action-recognition)
-## pose
-### pose using YOLOv7-Pose
-[pose yolov3](https://www.kaggle.com/datasets/ngoduy/dataset-video-for-human-action-recognition)
-### pose using YOLOv3 + Alphapose
-[pose yolov7](https://www.kaggle.com/datasets/ngoduy/dataset-video-for-human-action-recognition)
+### pose using YOLOv8-Pose
+[pose yolov7]()
 
 ## Training
 ```commandline
 python train.py
 ```
+Due to file size limitations, pretrained weights and large pose data are stored in Google Drive.
+Download them here:
+👉 https://drive.google.com/drive/folders/1lgFZt-qoHjUOdEk1tHzbQJ91OPogmwoS?usp=drive_link
+
+After downloading, extract and place the files in the appropriate directories:
+
+.pt model files → runs/ and result_model/
 ## Test
 ```commandline
-python test.py
+python main.py
 ```
 
 ### Acknowledgements
